@@ -1,0 +1,55 @@
+To set a static ip for PYNQ-Z2
+
+--ON WINDOWS--
+1. Write down the current network settings:
+	"ipconfig"
+	
+	Write down:
+	Subnet Mask
+	Default Gateway
+	
+--ON PYNQ--
+2. Get the current ip-adress:
+	"ifconfig eth0"
+	
+3. Write down the adress found after inet (192.168.x.xxx)
+
+4. Configure interface eth0:
+	"sudo nano /etc/network/interfaces.d/eth0"
+	
+(when using nano over SSH, DO NOT use the keypad on your keyboard when typing in numbers!)
+
+5. Edit the file as follows:
+	iface eth0 inet dhcp -> iface eth0 inet static
+	
+	Add the folowing lines beneath iface eth0 inet static
+	address THE ADDRESS YOU HAVE WRITTEN DOWN FROM STEP 2
+	netmask THE ADDRESS YOU HAVE WRITTEN DOWN FROM STEP 1 Subnet Mask
+	gateway THE ADDRESS YOU HAVE WRITTEN DOWN FROM STEP 1 Default Gateway
+	
+	EXAMPLE:
+	iface eth0 inet static
+	address 192.168.0.123
+	netmask 255.255.255.0
+	gateway 192.168.0.1
+	
+	Press ctrl+s to save and ctrl+x to exit
+	
+6. Configure the DNS-Namservers:
+	"sudo nano /etc/systemd/resolved.conf"
+	
+7. Edit the file as follows:
+	#DNS -> DNS 8.8.8.8 8.8.4.4
+	
+	EXAMPLE:
+	DNS 8.8.8.8 8.8.4.4
+	
+	Press ctrl+s to save and ctrl+x to exit
+	
+8. Reboot the PYNQ-Z2:
+	"sudo reboot"
+
+9. Check your connection to the internet:
+	"ping google.com"
+	
+	Press ctrl+c to exit
