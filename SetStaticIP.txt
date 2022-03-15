@@ -12,7 +12,7 @@ To set a static ip for PYNQ-Z2
 2. Get the current ip-adress:
 	"ifconfig eth0"
 	
-3. Write down the adress found after inet (192.168.x.xxx)
+3. Write down the address found after inet (192.168.x.xxx)
 
 4. Configure interface eth0:
 	"sudo nano /etc/network/interfaces.d/eth0"
@@ -35,7 +35,7 @@ To set a static ip for PYNQ-Z2
 	
 	Press ctrl+s to save and ctrl+x to exit
 	
-6. Configure the DNS-Namservers:
+6. Configure the DNS-Nameservers:
 	"sudo nano /etc/systemd/resolved.conf"
 	
 7. Edit the file as follows:
