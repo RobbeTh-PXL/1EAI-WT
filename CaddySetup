@@ -1,0 +1,78 @@
+Setting up a CADDY webserver and running a webpage
+
+--Install CADDY--
+1. Run the following commands from the official website:
+	"sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https"
+	"curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo tee /etc/apt/trusted.gpg.d/caddy-stable.asc"
+	"curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list"
+	"sudo apt update"
+	"sudo apt install caddy"
+
+--Setup a webpage--
+2. Create a directory for the caddy config files:
+	"sudo mkdir /etc/caddy"
+
+3. Changing the owner of the folder:
+	"sudo chown -R root:caddy /etc/caddy"
+	
+4. Create a directory to store the files that caddy will host:
+	"sudo mkdir /var/www"
+	"sudo chown caddy:caddy /var/www"
+	
+5. Create a sample webpage:
+	"sudo nano /var/www/index.html"
+	
+	paste the following in the text editor:
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Hello from Caddy!</title>
+	</head>
+	<body>
+	<h1 style="font-family: sans-serif">This page is being served via Caddy</h1>
+	</body>
+	</html>
+	
+	Press ctrl+s to save and ctrl+x to exit
+
+6. Edit the caddy config file:
+	"sudo nano /etc/caddy/Caddyfile"
+
+	 # Set this path to your site's directory.
+        root * /usr/share/caddy
+		
+	Change /usr/share/caddy -> /var/www
+
+     # Enable the static file server.
+        #file_server
+	
+	Uncomment #file_server -> file_server
+	
+	Press ctrl+s to save and ctrl+x to exit
+
+7. Restart the caddy server:
+	"sudo systemctl restart caddy"
+	
+8. In your webbrowser navigate to the PYNQ ip adress, can be found by:
+	"ifconfig eth0"
+	
+	The address found after inet (192.168.x.xxx)
+	
+	EXAMPLE
+	http://192.168.0.123:80
+	
+9. A webpage should load with the text:
+	This page is being served via Caddy
+	
+--GOOD TO KNOW--
+CADDY config file location:
+	/etc/caddy/Caddyfile
+	
+Files CADDY will host (put your website files in this location):
+	/var/www/
+	
+	index.html MUST BE top level!
+	
+Sources:
+https://caddyserver.com/docs/
+https://www.digitalocean.com/community/tutorials/how-to-host-a-website-with-caddy-on-ubuntu-18-04
