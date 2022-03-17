@@ -2,36 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
     <!-- We waken de website responsive:-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Dit is de pagina titel</title>
     <!-- Een comment voor nota's en documentatie -->
   </head>
-  <body>
+  <body style="background-color:powderblue;">
+    <p><b>
+      Deze webpagina bevat een verzameling van oefeningen op de programeertaal HTML.<br>
+      Het doel van deze oefeningen is om zowel de front- en backend van webapplicaties beter te kunnen programmeren<br>
+      De programeertaal HTML, uit het opleidingsonderdeel Webtechnologie maakt deel uit van mijn studies in Bachelor Elektronica-ICT.
+    </b></p>
     <div class="headings">
+      <h2>Headings & paragraphs:</h2>
       <h1>Dit is een h1 heading</h1>
       <h2>Dit is een h2 heading</h2>
       <h3>Dit is een h3 heading</h3>
       <p>Dit is een paragraaf</p>
     </div>
     <div class="opmaak">
-      <p><em>Deze tekst is cursief</em><br>
-        <strong>Deze tekst is vetgedrukt</strong>
+      <h2>Opmaak:</h2>
+      <p>
+        <em>Deze tekst is cursief.</em><br>
+        <strong>Deze tekst is vetgedrukt.</strong><br>
+        <b>Deze tekst is ook vetgedrukt.</b><br>
+        <i>Deze tekst is italic.</i><br>
+        <small>Deze tekst is klein!</small><br>
+        <del>Het doorstrepen van tekst.</del><br>
+        <mark>Of het markeren ervan.</mark><br>
+        <mark style="background-color:red;">In vershillende kleuren.</mark><br>
+        <ins>Deze tekst is onderlijnd.</ins><br>
+        We hebben <sub>Subscripts.</sub><br>
+        En <sup>Superscripts</sup><br>
+        We kunnen ook stukken tekst <span style="color:blue">een kleur geven</span>
       </p>
-
-      <p>We kunnen ook stukken tekst <span style="color:blue">een kleur geven</span></p>
     </div>
     <div class="lijsten">
-      <h2>Dit is een unordered list:</h2>
+      <h2>Lijsten:</h2>
+      <p>Dit is een unordered list:</p>
       <ul>
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
       </ul>
-
-      <h2>Dit is een ordered list:</h2>
+      <p>Dit is een ordered list:</p>
       <p>Top 3 gemeentes:</p>
       <ol>
         <li>Bilzen</li>
@@ -40,10 +54,11 @@
       </ol>
     </div>
     <div class="media">
-      <h2>Ook media kan worden toegevoegd</h2>
+      <h2>Media:</h2>
+      <p>Een foto:</p>
       <img src="media/chicken.jpg" style="width:500px;height:600px;">
-      <img src="mdia/kip.jpeg" alt="Deze tekst verschijnt als de afbeelding niet laad, en geeft een beschrijving voor slechtziende">
-      <br>
+      <img src="mdia/kip.jpeg" alt="Deze tekst verschijnt als de afbeelding niet laad, en geeft een beschrijving voor slechtziende.">
+      <p>Een video:</p>
       <video width="320" height="240" controls>
         <source src="media/chicken_dance.mp4" type="video/mp4">
       </video>
