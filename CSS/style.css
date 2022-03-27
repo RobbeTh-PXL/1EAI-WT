@@ -1,0 +1,5 @@
+/* Resets the default browser css parameters */
+* {
+  margin: 0px;
+  padding: 0px;
+}
