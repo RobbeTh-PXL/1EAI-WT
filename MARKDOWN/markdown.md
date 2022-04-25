@@ -71,15 +71,15 @@ Ducks says **Quack**
 
 ### Subitems
 * Jef
- * Gamer
- * Quick responses
- * Friends with him since forever
+  * Gamer
+  * Quick responses
+  * Friends with him since forever
 * Adrian
- * Cook
- * Fantastic taste buds
- * Spaghetti?
-   * Or beef?
+  * Cook
+  * Fantastic taste buds
+  * Spaghetti?
+  * Or beef?
 
 1. Instruction
- * How to do it
- * **Don't do this!**
+  * How to do it
+  * **Don't do this!**
