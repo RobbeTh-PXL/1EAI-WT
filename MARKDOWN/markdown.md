@@ -43,3 +43,8 @@ Not feeling like doing homework? [**Watch a movie or tv-series**](streaming serv
 (reference links are usually declared at the bottom of document)\
 [video platform]: www.youtube.com \
 [streaming service]: www.netflix.com
+
+
+## Images
+Ducks say **Quack**  
+![An awesome duck](https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg)
