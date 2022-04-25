@@ -52,7 +52,34 @@ Ducks says **Quack**
 
 ## Block Quotes
 >Once upon a time and a very good time it was there was a moocow coming down along the road and this moocow that was coming down along the road met a nicens little boy named baby *tuckoo*...
-
+>
 >His father told him that story: his father looked at him through a glass: he had a hairy face.
-
+>
 >He was baby *tuckoo*. The moocow came down the road where Betty Byrne lived: she sold lemon platt.
+
+
+## Lists
+### Unordered Lists
+* Eggs
+* Bacon
+* Cheese
+
+### Ordered Lists
+1. **Attach** the camera **strap**
+2. **Fully charge** the provided **battery**
+3. **Insert the battery**
+
+### Subitems
+* Jef
+ * Gamer
+ * Quick responses
+ * Friends with him since forever
+* Adrian
+ * Cook
+ * Fantastic taste buds
+ * Spaghetti?
+   * Or beef?
+
+1. Instruction
+ * How to do it
+ * **Don't do this!**
