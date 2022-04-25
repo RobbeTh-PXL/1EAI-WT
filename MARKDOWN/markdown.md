@@ -33,11 +33,11 @@ Hello name is **Jef**
 This is a link to [my GitHub Repo](https://github.com/RobbeTh-PXL/1EAI-WT)
 
 #### Text styles are also available for links
-Use [**google**](www.google.com) To search for the answer!
+Use [**google**](www.google.com) to search for the answer!
 
-### Reference Links
+### Reference Links (Currently broken)
 Are you **bored**? [visit the most popular video content platform][video platform]
-Not feeling like doing homework? [**Watch a movie or tv-series**][streaming service]
+Not feeling like doing homework? [**Watch a movie or tv-series**](streaming service)
 [Look at this awesome website][video platform]
 
 (reference links are usually declared at the bottom of document)
