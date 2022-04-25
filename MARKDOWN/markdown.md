@@ -79,7 +79,3 @@ Ducks says **Quack**
   * Fantastic taste buds
   * Spaghetti?
   * Or beef?
-
-1. Instruction
-  * How to do it
-  * **Don't do this!**
