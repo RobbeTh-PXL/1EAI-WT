@@ -19,7 +19,7 @@ Hello name is **Jef**\
 *"That's not me!"* She said.
 
 
-## Markdown Headers
+## Markdown Headings
 # h1 heading
 ## h2 heading
 ### h3 heading
@@ -46,7 +46,7 @@ Not feeling like doing homework? [**Watch a movie or tv-series**](streaming serv
 
 
 ## Images
-Ducks says **Quack**  
+Ducks says **Quack**\
 ![An awesome duck](https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg)
 
 
@@ -78,4 +78,6 @@ Ducks says **Quack**
   * Cook
   * Fantastic taste buds
   * Spaghetti?
-  * Or beef?
+    * Or beef?
+
+[Guide to Markdown](https://www.markdownguide.org/basic-syntax/#overview)
