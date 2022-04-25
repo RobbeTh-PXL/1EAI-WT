@@ -46,5 +46,13 @@ Not feeling like doing homework? [**Watch a movie or tv-series**](streaming serv
 
 
 ## Images
-Ducks say **Quack**  
+Ducks says **Quack**  
 ![An awesome duck](https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg)
+
+
+## Block Quotes
+>Once upon a time and a very good time it was there was a moocow coming down along the road and this moocow that was coming down along the road met a nicens little boy named baby *tuckoo*...
+
+>His father told him that story: his father looked at him through a glass: he had a hairy face.
+
+>He was baby *tuckoo*. The moocow came down the road where Betty Byrne lived: she sold lemon platt.
