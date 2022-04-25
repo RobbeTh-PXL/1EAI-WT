@@ -1,41 +1,41 @@
-#Markdown
+# Markdown
 
-##Markdown Text Styles:
-###Italic & Bold
+## Markdown Text Styles:
+### Italic & Bold
 _This is written in italic_
 *This is also written in italic*
 
 **This is written in bold**
 __This is also written in bold__
 
-###A mix of both styles is also possible
+### A mix of both styles is also possible
 **_This text is italic and bold_**
 ***This text is also italic and bold***
 ___The Same here!___
 _This seems **nice!**_
 
-###Style a word/part of sentence
+### Style a word/part of sentence
 Hello name is **Jef**
 *"That's not me!"* She said.
 
 
-##Markdown Headers
-#h1 heading
-##h2 heading
-###h3 heading
-####h4 heading
-#####h5 heading
-######h6 heading
+## Markdown Headers
+# h1 heading
+## h2 heading
+### h3 heading
+#### h4 heading
+##### h5 heading
+###### h6 heading
 
 
-##Links
-###Inline links
+## Links
+### Inline links
 This is a link to [my GitHub Repo](https://github.com/RobbeTh-PXL/1EAI-WT)
 
-####Text styles are also available for links
+#### Text styles are also available for links
 Use [**google**](www.google.com) To search for the answer!
 
-###Reference Links
+### Reference Links
 Are you **bored**? [visit the most popular video content platform][video platform]
 Not feeling like doing homework? [**Watch a movie or tv-series**][streaming service]
 [Look at this awesome website][video platform]
