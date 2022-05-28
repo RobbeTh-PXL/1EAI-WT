@@ -9,19 +9,64 @@
         //Dit is een comment
         window.alert("Boo!");
       }
+      function Optellen(){
+        var getal1, getal2, som;
+        getal1 = Number(document.getElementById("getal1").value);
+        getal2 = Number(document.getElementById("getal2").value);
+        som = getal1 + getal2;
+        document.getElementById("som").value = som;
+      }
+      function openWin() {
+        myWindow = window.open("", "", "width=400, height=200");
+        myWindow.blur();
+      }
+
     </script>
   </head>
   <body>
     <h1>JavaScript</h1>
+    <p>JavaScript is zeer gelijkaardig aan de programeertaal c, enkel html is eraan toegevoegd(en net een iets andere syntax).<br>
+      De opbouw blijft hetzelfde.</p>
+
     <h2>JScript dat uitgevoerd wordt in head</h2>
     <h3>Tekst veranderen.</h3>
     <p id="verander">Laten we deze tekst veranderen</p>
     <button type="button" onclick="myFunction()">Verander!</button>
+
+    <h3>Een alert geven aan de gebruiker.</h3>
+    <button type="button" onclick="Alert()">Alert!</button>
+
+    <h3>Een wiskundige operatie:</h3>
+    <input id="getal1"> + <input id="getal2">
+    <button onclick="Optellen()">Tel de getallen op</button>
+    = <input id="som">
+
+    <h3>Nieuwe vensters beheren</h3>
+    <input type="button" value="Open nieuw venster" onclick="openWin()">
+    <input type="button" value="Verberg nieuw venster" onclick="myWindow.blur()">
+    <input type="button" value="Focus op nieuw venster" onclick="myWindow.focus()">
+
     <h2>JScript dat uitgevoerd wordt in body</h2>
     <h3>Tekst verbergen.</h3>
     <p id="verberg">Probeer mij te verbergen.</p>
     <button type="button" onclick="document.getElementById('verberg').style.display='none'">Weg ermee!</button>
-    <h3>Een alert geven aan de gebruiker.</h3>
-    <button type="button" onclick="Alert()">Alert!</button>
+
+    <h3>Bevestiging vragen</h3>
+    <button onclick="bevestig()">Hier niet klikken ;)</button>
+    <p id="bev"></p>
+    <script>
+      function bevestig() {
+        var txt;
+        if (confirm("Ok Or Cancel, U can return now. I Warned you!")) {
+          txt = "Have it your way!";
+          window.open("https://shattereddisk.github.io/rickroll/rickroll.mp4","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=800, height=800");
+        }
+        else {
+          txt = "Disaster Averted!";
+        }
+        document.getElementById("bev").innerHTML = txt;
+      }
+    </script>
+
   </body>
 </html>
